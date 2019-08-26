@@ -59,7 +59,7 @@ class CameraDetectionViewController: UIViewController {
         imageView = UIImageView(image: srcImage)
         if let imageHash = garbageItem?.imageUrl, !imageHash.isEmpty {
             imageView.kf.setImage(with: URL(string: "\(networkHost)/download/user-upload/\(imageHash)"))
-        } else {
+        } else if srcImage == nil {
             imageView.image = UIImage(named: "image_unknown.jpeg")
         }
         imageView.contentMode = .scaleAspectFit
@@ -296,7 +296,7 @@ extension CameraDetectionViewController {
                 print("addItem with imageHash: \(imageHash)")
                 let parameters: Parameters = [
                     "item": itemName,
-                    "classification": categories,
+                    "classification": categories.rawValue,
                     "extra_detail": extraInfo,
                     "image_hash": imageHash
                 ]

@@ -20,16 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>App need to take photo for recognize</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App need to write photo to system</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App need to read photo form system</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>App need to read photo form system</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>App need to write photo to system</string>
-	<key>NSCameraUsageDescription</key>
-	<string>App need to take photo for recognize</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
