@@ -59,6 +59,8 @@ class CameraDetectionViewController: UIViewController {
         imageView = UIImageView(image: srcImage)
         if let imageHash = garbageItem?.imageUrl, !imageHash.isEmpty {
             imageView.kf.setImage(with: URL(string: "\(networkHost)/download/user-upload/\(imageHash)"))
+        } else {
+            imageView.image = UIImage(named: "image_unknown.jpeg")
         }
         imageView.contentMode = .scaleAspectFit
         view.addSubview(imageView)

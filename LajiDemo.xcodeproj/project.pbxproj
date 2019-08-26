@@ -14,6 +14,7 @@
 		E57921FE22F535F500D31F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57921FD22F535F500D31F96 /* Assets.xcassets */; };
 		E579220122F535F500D31F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57921FF22F535F500D31F96 /* LaunchScreen.storyboard */; };
 		E579220A22F5845500D31F96 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E579220922F5845500D31F96 /* UIImage+.swift */; };
+		E583E6A72313983C00CE060F /* image_unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E583E6A62313983C00CE060F /* image_unknown.jpeg */; };
 		E59F86922312E87A00600828 /* UIViewController+Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59F86912312E87A00600828 /* UIViewController+Dialog.swift */; };
 		E5CF25C922F67130002C3FF2 /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF25C822F67130002C3FF2 /* ViewController+.swift */; };
 		E5CF25CC22F674DE002C3FF2 /* GarbageItem+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF25CB22F674DE002C3FF2 /* GarbageItem+.swift */; };
@@ -37,6 +38,7 @@
 		E579220022F535F500D31F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E579220222F535F500D31F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E579220922F5845500D31F96 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		E583E6A62313983C00CE060F /* image_unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_unknown.jpeg; sourceTree = "<group>"; };
 		E59F86912312E87A00600828 /* UIViewController+Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dialog.swift"; sourceTree = "<group>"; };
 		E5CF25C822F67130002C3FF2 /* ViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
 		E5CF25CB22F674DE002C3FF2 /* GarbageItem+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GarbageItem+.swift"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		E5FC24A8230656F1008AD146 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E583E6A62313983C00CE060F /* image_unknown.jpeg */,
 				E5FC24A9230656FE008AD146 /* classification.csv */,
 			);
 			path = Resources;
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E583E6A72313983C00CE060F /* image_unknown.jpeg in Resources */,
 				E5FC24AA230656FE008AD146 /* classification.csv in Resources */,
 				E579220122F535F500D31F96 /* LaunchScreen.storyboard in Resources */,
 				E57921FE22F535F500D31F96 /* Assets.xcassets in Resources */,
