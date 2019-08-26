@@ -2,21 +2,38 @@
 //  AppDelegate.swift
 //  LajiDemo
 //
-//  Created by huya on 2019/8/3.
+//  Created by javen on 2019/8/3.
 //  Copyright © 2019 nogayrulegroup. All rights reserved.
 //
 
 import UIKit
 import CoreData
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let networkManager = NetworkReachabilityManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        networkManager!.listener = { status in
+            switch status {
+            case .notReachable:
+                print("notReachable")
+            case .unknown:
+                print("unknown")
+            case .reachable(.ethernetOrWiFi):
+                print("ethernetOrWiFi")
+            case .reachable(.wwan):
+                print("wwan")
+            }
+            NotificationCenter.default.post(name: didNetworkStatusChangedNotification, object: self.networkManager?.isReachable)
+        }
+        networkManager!.startListening()
+        
         return true
     }
 
@@ -41,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+        networkManager?.stopListening()
         self.saveContext()
     }
 
